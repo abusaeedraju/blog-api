@@ -20,7 +20,6 @@ router.get("/blogs", async (req, res) => {
 
 })
 
-
 router.get('/my-blogs', VerifyToken, async (req, res) => {
     const email = req?.query.data
     const query = { email: email }
